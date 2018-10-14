@@ -1,4 +1,4 @@
-package base
+package board
 
 type rook struct{}
 

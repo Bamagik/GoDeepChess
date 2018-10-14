@@ -1,12 +1,8 @@
-package base
+package board
 
 import (
 	"fmt"
 )
-
-type square struct {
-	piece piece
-}
 
 type Board struct {
 	board [][]square
@@ -30,12 +26,4 @@ func main() {
 func (board *Board) String() string {
 	str := ""
 	return str
-}
-
-func (sq square) String() string {
-	if sq.piece == nil {
-		return "."
-	}
-	var s string = sq.piece.String()
-	return s
 }
